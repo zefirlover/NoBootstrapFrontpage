@@ -5,12 +5,41 @@
 
     width: 99.05vw;
     height: 678px;
-    left: 0px;/*
-    top: 150px;*/
-
-    padding: 109px 40% 80px 100px;
 
     background: #000000;
+}
+
+.frontelements
+{
+    z-index: 1;
+    flex-direction: column;
+    flex-wrap: wrap;
+    position: relative;
+
+    padding: 10vw 30vw 10vw 10vw;
+}
+.backelements
+{
+    z-index: 0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    position: relative;
+    
+    margin-left: 30vw;
+    margin-top: 5vw;
+}
+
+.mindrecktangle
+{
+    width: 1166px; /*1166*/
+    height: 620px;
+
+    background: radial-gradient(50% 62.99% at 50% 50%, rgba(0, 0, 0, 0) 0%, #000000 100%),
+    radial-gradient(51.63% 139.59% at 51.63% 50%,
+            rgba(0, 0, 0, 0) 55.27%, #000000 100%),
+    url(../data/mind_normal.png) no-repeat center center;
+    background-size: cover;
 }
 
 .bannertext
@@ -89,27 +118,3 @@
     object-fit: cover;
     transform: translate(0,-50%);
 }
-
-.mindrecktangle
-{
-    width: 1166px; /*1166*/
-    height: 620px;
-    right: 0px;
-    top: 50px;
-
-    background: radial-gradient(50% 62.99% at 50% 50%, rgba(0, 0, 0, 0) 0%, #000000 100%),
-    radial-gradient(51.63% 139.59% at 51.63% 50%,
-            rgba(0, 0, 0, 0) 55.27%, #000000 100%),
-    url(../data/mind_normal.png) no-repeat center center;
-    background-size: cover;
-}
-
-.frontelements
-{
-    width: 80%;
-    z-index: 2;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-}
-.backelements { z-index: 1; }

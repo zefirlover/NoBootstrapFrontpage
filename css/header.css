@@ -13,7 +13,6 @@
 .headercontainers
 {
     position: relative;
-    top: 0px;
     display: flex;
     align-content: center;
     height: 100%;
